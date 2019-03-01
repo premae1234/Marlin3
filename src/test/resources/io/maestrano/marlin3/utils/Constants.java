@@ -65,13 +65,17 @@ public static final String QUICKBOOKSSIGNINBTN_ID = "ius-sign-in-submit-btn";
 
 // Settings
 
-
 public static final String MANAGEDASHBOARDS_XPATH = "//p[text()='Manage my dashboard']";
-		//"//*[@data-pt-name=\"bb_hd_dashboardmanagement\"]/p";
+//"//*[@data-pt-name=\"bb_hd_dashboardmanagement\"]/p";
 public static final String ADDDASHBOARD2_XPATH ="//p[contains(text(),'Add dashboard')]";
 
 // "(//nav[@class='utility-nav ml-auto d-flex justify-content-end
 // align-items-center']//span[@class='ng-star-inserted'])";
+public static final String DELETEDASHBOARD1_XPATH= "(//img[@src='/assets/img/dashboard-management-delete.svg'])[3]";
+public static final String NEXTBUTTON_XPATH="(//button[@class='pointer'])[2]";
+
+public static final String SAVE1_XPATH ="//div[contains(@class,'dashboard-edit-modal-dashboard-save d-flex flex-row justify-content-center align-items-center')]";
+
 
 // config
 public static String REPORTS_PATH = System.getProperty("user.dir") + "/Reports/";

@@ -34,22 +34,28 @@ public class SettingsTest extends BaseTest {
 		PageFactory.initElements(driver, loginPage);
 		boolean actualResult = loginPage.doLogin(data.get("username"), data.get("password"));
 		if (!actualResult) {
-			AssertJUnit.fail("Login Failed");
+			Assert.fail("Login Failed");
 		}
 
 		ExecutiveDashboardPage exeDashboardPage = new ExecutiveDashboardPage(driver);
-
+		
 		PageFactory.initElements(driver, exeDashboardPage);
 		exeDashboardPage.goToSettings();
 
 		Thread.sleep(6000);
-
+		
 		SettingsPage settingspage = new SettingsPage(driver);
-
+		
 		PageFactory.initElements(driver, settingspage);
 		settingspage.goToManageDashboard();
 		settingspage.clickOnAddDashboardLink();
-
+		//settingspage.clickonnextbutton();
+		Thread.sleep(5000);
+		settingspage.clickonnextbutton();
+		Thread.sleep(2000);
+		settingspage.clickonSavebutton();
+		//settingspage.deletedashboardfromSettings();
+		
 	}
 
 	@DataProvider
