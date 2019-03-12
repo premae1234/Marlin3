@@ -2,34 +2,34 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="30940" started-at="2019-03-01T17:02:21Z" finished-at="2019-03-01T17:02:52Z">
+  <suite name="Default suite" duration-ms="29016" started-at="2019-03-12T17:28:11Z" finished-at="2019-03-12T17:28:40Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="30940" started-at="2019-03-01T17:02:21Z" finished-at="2019-03-01T17:02:52Z">
-      <class name="io.maestrano.marlin3.test.SettingsTest">
-        <test-method status="PASS" signature="settingsTest(java.util.Hashtable)[pri:0, instance:io.maestrano.marlin3.test.SettingsTest@343570b7]" name="settingsTest" duration-ms="30269" started-at="2019-03-01T17:02:21Z" data-provider="getData" finished-at="2019-03-01T17:02:51Z">
+    <test name="Default test" duration-ms="29016" started-at="2019-03-12T17:28:11Z" finished-at="2019-03-12T17:28:40Z">
+      <class name="io.maestrano.marlin3.test.AddModuleTest">
+        <test-method status="PASS" signature="doLogin(java.util.Hashtable)[pri:0, instance:io.maestrano.marlin3.test.AddModuleTest@343570b7]" name="doLogin" duration-ms="28270" started-at="2019-03-12T17:28:11Z" data-provider="getData" finished-at="2019-03-12T17:28:40Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{password=Password1!, Runmode=Y, username=prema.eddyam+auto1@maestrano.com}]]>
+                <![CDATA[{KPIName=Gross profit, password=Password1!, ComparisonTime=vs. 1 year ago, Runmode=Y, TimePeriod=Past 90 days, ModuleName=Aged payables and receivables, DashboardName=New-Dashboard, username=prema.eddyam+auto1@maestrano.com}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- settingsTest -->
-        <test-method status="PASS" signature="quit(org.testng.ITestResult)[pri:0, instance:io.maestrano.marlin3.test.SettingsTest@343570b7]" name="quit" is-config="true" duration-ms="618" started-at="2019-03-01T17:02:51Z" finished-at="2019-03-01T17:02:52Z">
+        </test-method> <!-- doLogin -->
+        <test-method status="PASS" signature="quit(org.testng.ITestResult)[pri:0, instance:io.maestrano.marlin3.test.AddModuleTest@343570b7]" name="quit" is-config="true" duration-ms="684" started-at="2019-03-12T17:28:40Z" finished-at="2019-03-12T17:28:40Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=settingsTest status=SUCCESS method=SettingsTest.settingsTest(java.util.Hashtable)[pri:0, instance:io.maestrano.marlin3.test.SettingsTest@343570b7] output={null}]]]>
+                <![CDATA[[TestResult name=doLogin status=SUCCESS method=AddModuleTest.doLogin(java.util.Hashtable)[pri:0, instance:io.maestrano.marlin3.test.AddModuleTest@343570b7] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
-      </class> <!-- io.maestrano.marlin3.test.SettingsTest -->
+      </class> <!-- io.maestrano.marlin3.test.AddModuleTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

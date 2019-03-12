@@ -30,6 +30,8 @@ public static final String HIDEADDMODULES_XPATH = "//*[@data-pt-name=\"bb_ft_col
 public static final String ADDKPI_XPATH = "//*[@data-pt-name=\"bb_mm_more_dashboard_kpi\"]";
 public static final String ALLKPI_XPATH = "//li/ul/li[@class=\"ng-star-inserted\"]";
 public static final String KPITIMEPERIOD_NAME = "timePeriod";
+
+public static final String COMPARISONPERIOD_NAME = "comparionPeriod";
 public static final String DONEKPI_XPATH = "//*[text()='Done']";
 public static final String SAVE_XPATH = "//*[text()='Save']";
 public static final String SETTINGSICON_XPATH = "//a[@data-pt-name=\"bb_hd_settings\"]";

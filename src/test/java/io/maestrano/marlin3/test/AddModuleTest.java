@@ -50,7 +50,7 @@ public class AddModuleTest extends BaseTest {
 		Thread.sleep(2000);
 		exedashPage.addModulesDashboard();
 	    Thread.sleep(2000);                                                                    
-		exedashPage.addtoSelectDashboard(data.get("ModuleName"),data.get("KPIName"),data.get("TimePeriod"));
+		exedashPage.addtoSelectDashboard(data.get("ModuleName"),data.get("KPIName"),data.get("TimePeriod"),data.get("ComparisonTime"));
 		 
 
 	}

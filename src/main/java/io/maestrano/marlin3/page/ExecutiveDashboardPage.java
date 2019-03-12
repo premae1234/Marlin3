@@ -68,6 +68,11 @@ public class ExecutiveDashboardPage extends BasePage {
 	@FindBy(name = Constants.KPITIMEPERIOD_NAME)
 	private WebElement kpiTimePeriod;
 
+	@FindBy(name = Constants.COMPARISONPERIOD_NAME)
+	private WebElement comparisonPeriod;
+	
+	
+	
 	@FindBy(xpath = Constants.SETTINGSICON_XPATH)
 	private WebElement settingsIcon;
 
@@ -194,7 +199,7 @@ public class ExecutiveDashboardPage extends BasePage {
 		settingsIcon.click();
 	}
 
-	public void addtoSelectDashboard(String ModuleName, String KPIName, String timePeriod) throws InterruptedException {
+	public void addtoSelectDashboard(String ModuleName, String KPIName, String timePeriod,String comptime) throws InterruptedException {
 
 		for (WebElement webElement : selectModules) {
 
@@ -218,6 +223,8 @@ public class ExecutiveDashboardPage extends BasePage {
 
 				kpiTimePeriod.sendKeys(timePeriod);
 				Thread.sleep(2000);
+				comparisonPeriod.sendKeys(comptime);
+				
 				doneKPI.click();
 				break;
 			}
