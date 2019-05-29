@@ -34,7 +34,7 @@ public static final String KPITIMEPERIOD_NAME = "timePeriod";
 public static final String COMPARISONPERIOD_NAME = "comparionPeriod";
 public static final String DONEKPI_XPATH = "//*[text()='Done']";
 public static final String SAVE_XPATH = "//*[text()='Save']";
-public static final String SETTINGSICON_XPATH = "//a[@data-pt-name=\"bb_hd_settings\"]";
+public static final String SETTINGSICON_XPATH = "//a[@data-pt-name='bb_hd_settings']";
 
 //all dashboards path
 
@@ -67,9 +67,10 @@ public static final String QUICKBOOKSSIGNINBTN_ID = "ius-sign-in-submit-btn";
 
 // Settings
 
-public static final String MANAGEDASHBOARDS_XPATH = "//p[text()='Manage my dashboard']";
+public static final String MANAGEDASHBOARDS_XPATH = "//p[contains(text(),'Manage my dashboard')]";
 //"//*[@data-pt-name=\"bb_hd_dashboardmanagement\"]/p";
 public static final String ADDDASHBOARD2_XPATH ="//p[contains(text(),'Add dashboard')]";
+public static final String BLANKDASHBOARD_XPATH="//p[contains(text(),'Start with a blank dashboard')]";
 
 // "(//nav[@class='utility-nav ml-auto d-flex justify-content-end
 // align-items-center']//span[@class='ng-star-inserted'])";

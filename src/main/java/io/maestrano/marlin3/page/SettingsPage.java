@@ -15,7 +15,6 @@ public class SettingsPage extends BasePage {
 
 	@FindBy(xpath = Constants.MANAGEDASHBOARDS_XPATH)
 	private WebElement manageDashboard;
-	
 
 	@FindBy(xpath = Constants.ADDDASHBOARD2_XPATH)
 	private WebElement adddashboard2;
@@ -26,36 +25,44 @@ public class SettingsPage extends BasePage {
 	@FindBy(xpath = Constants.NEXTBUTTON_XPATH)
 	private WebElement nextbutton;
 
-	
 	@FindBy(xpath = Constants.SAVE1_XPATH)
 	private WebElement savebutton;
-	
-	
+
+	@FindBy(xpath = Constants.BLANKDASHBOARD_XPATH)
+	private WebElement blankdashboardLink;
+
 	public void goToManageDashboard() {
 
-		explicit_xpath(Constants.MANAGEDASHBOARDS_XPATH, 50);
+		explicit_xpath(Constants.MANAGEDASHBOARDS_XPATH, 70);
 		manageDashboard.click();
 
 	}
+
 	public void clickOnAddDashboardLink() {
 
-		explicit_xpath(Constants.ADDDASHBOARD2_XPATH, 50);
+		explicit_xpath(Constants.ADDDASHBOARD2_XPATH, 70);
 		adddashboard2.click();
+	}
 
+	public void clickOnBlankDashboardLink() {
 
-}
-	
+		blankdashboardLink.click();
+
+	}
+
 	public void clickonnextbutton() {
 		nextbutton.click();
 	}
-	
+
 	public void clickonSavebutton() {
 		savebutton.click();
 	}
-	
-	/*public void deletedashboardfromSettings() {
-		deletedashboardfromsetting.click();
-		
-	
-}*/
+
+	/*
+	 * public void deletedashboardfromSettings() {
+	 * deletedashboardfromsetting.click();
+	 * 
+	 * 
+	 * }
+	 */
 }

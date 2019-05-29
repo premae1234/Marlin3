@@ -127,7 +127,7 @@ public class BaseTest {
 
 	/******************** Test Method *******************/
 
-	@AfterMethod
+	//@AfterMethod
 	public void quit(ITestResult result) {
 
 		if (result.getStatus() == ITestResult.FAILURE) {

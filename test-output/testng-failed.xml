@@ -1,38 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="Test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
       <class name="io.maestrano.marlin3.test.SettingsTest">
         <methods>
-          <include name="quit"/>
           <include name="settingsTest" invocation-numbers="0"/>
         </methods>
       </class> <!-- io.maestrano.marlin3.test.SettingsTest -->
-      <class name="io.maestrano.marlin3.test.CashOnHandValueTest">
-        <methods>
-          <include name="quit"/>
-          <include name="doLogin" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- io.maestrano.marlin3.test.CashOnHandValueTest -->
-      <class name="io.maestrano.marlin3.test.AllDashboardsTest">
-        <methods>
-          <include name="quit"/>
-          <include name="allDashboardsTest" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- io.maestrano.marlin3.test.AllDashboardsTest -->
-      <class name="io.maestrano.marlin3.test.NewUserRedirectionTest">
-        <methods>
-          <include name="quit"/>
-          <include name="doLogin" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- io.maestrano.marlin3.test.NewUserRedirectionTest -->
-      <class name="io.maestrano.marlin3.test.LoginTest">
-        <methods>
-          <include name="quit"/>
-          <include name="doLogin" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- io.maestrano.marlin3.test.LoginTest -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
